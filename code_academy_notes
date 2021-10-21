@@ -1,8 +1,12 @@
 """**********************
+There are samples and descriptions that I collect from different free code education websites to remember always
+**********************
+"""
+
+"""**********************
 parrot = "Norwegian Blue"
 
 print("Norwegian Blue".lower()) 
-
 **********************
 """
 
