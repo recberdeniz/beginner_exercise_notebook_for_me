@@ -46,3 +46,31 @@ print(len(ministry))
 print("The Ministry of Silly Walks".upper()) 
 **********************
 """
+
+"""**********************
+my_string = "Bu kutuyu ilk siz aciyorsunuz."
+print(len(my_string))
+print(my_string.upper())
+**********************
+"""
+
+"""**********************
+On line 13, assign the variable fifth_letter equal to the fifth letter of the string “MONTY”.
+
+Remember that the fifth letter is not at index 5. Start counting your indices from zero.
+
+fifth_letter = "MONTY"[4]
+
+print fifth_letter
+**********************
+"""
+
+"""********************** Old Type
+string_1 = "Camelot"
+string_2 = "place"
+
+print "Let's not go to %s. 'Tis a silly %s." % (string_1, string_2)
+#Let's not go to Camelot, 'Tis a silly place
+**********************
+"""
+
