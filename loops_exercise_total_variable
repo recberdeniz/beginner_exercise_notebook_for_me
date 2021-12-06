@@ -1,0 +1,20 @@
+"""EVERYTHING IN HERE IS FROM A ONLINE LECTURE NOT BELONGS TO ME"""
+
+print("*******************\n"
+"Problem 4"
+"\nHer bir while döngüsünde kullanıcıdan bir sayı alın\nve kullanıcının girdiği sayıları "toplam" isimli bir değişkene ekleyin."
+"\nKullanıcı "q" tuşuna bastığı zaman döngüyü sonlandırın\n"
+"ve ekrana "toplam değişkenini" bastırın.\n"
+"İpucu : while döngüsünü sonsuz koşulla başlatın ve kullanıcı q'ya basarsa döngüyü break ile sonlandırın.\n*******************")
+
+total = 0
+
+
+while True:
+  num = (input("Type Number:")
+  if (num == "q"):
+      print("See you next time")
+      break
+  num = int(num)
+  total += num
+print("Total:",total)s
