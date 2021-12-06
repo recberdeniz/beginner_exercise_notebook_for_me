@@ -1,0 +1,12 @@
+"""EVERYTHING IN HERE IS FROM A ONLINE LECTURE NOT BELONGS TO ME"""
+
+print("*******************\n"
+"Problem 3"
+"\n1'den 10'kadar olan sayılarla ekrana çarpım tablosu bastırmaya çalışın."
+"\nİpucu: İç içe 2 tane for döngüsü kullanın.\n"
+"Aynı zamanda sayıları range() fonksiyonunu kullanarak elde edin.\n*******************")
+
+for i in range(1,11):
+    print("*********************")
+    for q in range(1,11):
+        print("{} * {} = {}".format(i,q,i*q))
