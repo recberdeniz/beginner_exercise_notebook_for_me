@@ -1,0 +1,23 @@
+"""EVERYTHING IN HERE IS FROM A ONLINE LECTURE NOT BELONGS TO ME"""
+
+print("*******************\n"
+"Problem 2"
+"\nKullanıcıdan aldığınız bir sayının "Armstrong" sayısı olup olmadığını bulmaya çalışın."
+"\nÖrnek olarak, Bir sayı eğer 4 basamaklı ise ve oluşturan rakamlardan herbirinin\n"
+"4. kuvvetinin toplamı( 3 basamaklı sayılar için 3.kuvveti ) o sayıya eşitse bu sayıya "Armstrong" sayısı denir.\n"
+"\tÖrnek olarak : 1634 = 1^4 + 6^4 + 3^4 + 4^4\n*******************")
+
+num = ("Type The Number To Check If It Is Armstrong or Not:")
+prime = len(num)
+num = int(num)
+order = 0
+total = 0
+temp_num = num
+while (temp_num > 0):
+    order = num % 10
+    total += order ** prime
+    temp_num //= 10
+if (total == num):
+  print("{} is an armstrong number",num)
+else :
+  print("{} is not an armstrong number",num)
