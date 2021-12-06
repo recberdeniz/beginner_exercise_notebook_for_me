@@ -1,0 +1,34 @@
+print("**********************\nATM_Exercise\n**********************)
+print("*****\nTransactions:\n
+1. Balance Inquiry\n
+2. Deposit\n
+3. Withdrawal\n
+press 'q' to exit*****")
+
+balance = 1000
+
+while True:
+    transaction = input("Select Transaction:")
+    if (transaction == "q"):
+        print("Have A Good Day!")
+        break
+    elif (transaction == "1"):
+        print("Transaction on process...")
+        print("Your Balance Inquiry:,balance")
+    elif (transaction == "2"):
+        dep_amo = int(input("Deposit Amount You Would Like:"))
+        print("Transaction on process...")
+        balance += dep_amo 
+        print("Your Current Balance is:",balance)
+    elif ("transaction == "3"):
+        with_amo = int(input("Withdrawal Amout You Would Like:))
+        print("Transaction on process...")
+        if (balance - with_amo < 0):
+            print("Invalid Amount\nYour Current Balance")
+            continue
+        balance -= with_amo
+        print("Your Current Balance:",balance)
+        
+        
+    else:
+        print("You can chooe only 1, 2, 3\n Otherwise press 'q' to exit")
