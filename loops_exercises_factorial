@@ -1,3 +1,4 @@
+"""EVERYTHING IN HERE IS FROM A ONLINE LECTURE NOT BELONGS TO ME"""
 print("************\nFactorial_Notation\n
 press 'q' to exit\n************)
 while True:
