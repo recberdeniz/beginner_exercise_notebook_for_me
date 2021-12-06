@@ -1,0 +1,29 @@
+"""EVERYTHING IN HERE IS FROM A ONLINE LECTURE NOT BELONGS TO ME"""
+
+m_user_name = "Partly"
+m_password = "Sunny"
+
+try_limit = 3
+
+while True:
+    user_name = input("enter user name:")
+    password = input("enter password:")
+    if (user_name == m_user_name and password == m_password):
+        print("Succesful Login")
+        break
+    elif (user_name != m_user_name and password != m_password):
+        try_limit -= 1
+        
+        print("Invalid User Name and Password - You have {} left limit to enter before block".format(try_limit))
+    elif (user_name != m_user_name and password == m_password):
+        try_limit -= 1
+        if (try_limit == 0):
+            print("Your All Limit Have Been Used\n Can't do any action before 10 min.") 
+            break
+        print("Invalid User Name - You have {} left limit to enter before block".format(try_limit))
+    else :
+        try_limit -= 1
+        print("Invalid Password - You have {} left limit to enter before block".format(try_limit))
+    if (try_limit == 0):
+            print("Your All Limit Have Been Used\n Can't do any action before 10 min.") 
+            break
