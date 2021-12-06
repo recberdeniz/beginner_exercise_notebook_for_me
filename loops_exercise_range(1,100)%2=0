@@ -1,0 +1,9 @@
+"""EVERYTHING IN HERE IS FROM A ONLINE LECTURE NOT BELONGS TO ME"""
+
+print("*******************\n"
+"Problem 6"
+"\nlist comprehension kullanarak 1'den 100'e kadar olan sayılardan"
+"\nsadece çift sayıları bir listeye atmayı yapmayı çalışın.\n*******************")
+
+list_1 = [i for i in list_1 if (i % 2 == 0)]
+print(list_1,"\n")
