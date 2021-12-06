@@ -1,1 +1,13 @@
+"""EVERYTHING IN HERE IS FROM A ONLINE LECTURE NOT BELONGS TO ME"""
+print("**********\nFibonacci\n
+1,1,2,3,5,8,13,21,34,55,......\n**********")
 
+first_n = 1
+second_n = 1
+
+fibonacci = [first_n,second_n]
+for i in range(10):
+    first_n,second_n = second_n,first_n
+    fibonacci.append(second_n)
+
+print(fibonacci)
