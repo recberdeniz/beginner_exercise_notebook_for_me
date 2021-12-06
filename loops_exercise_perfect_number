@@ -1,0 +1,20 @@
+"""EVERYTHING IN HERE IS FROM A ONLINE LECTURE NOT BELONGS TO ME"""
+
+print("*******************\n"
+"Problem 1"
+"\nKullanıcıdan aldığınız bir sayının mükemmel olup olmadığını bulmaya çalışın."
+"\nBir sayının kendi hariç bölenlerinin toplamı kendine eşitse bu sayıya 'mükemmel sayı' denir.\n"
+"Örnek olarak, 6 mükemmel bir sayıdır. (1 + 2 + 3 = 6)\n*******************")
+
+num = int(input("Type Number:")
+
+i = 1
+total = 0
+while (i < num):
+    if (num % i == 0):
+        total += i
+    i += 1
+if (total == num):
+   print("{} is a perfect number",num)
+else :
+   print("{} is not a perfect number",num)
