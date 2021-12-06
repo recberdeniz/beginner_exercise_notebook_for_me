@@ -1,0 +1,25 @@
+"""EVERYTHING IN HERE IS FROM A ONLINE LECTURE NOT BELONGS TO ME"""
+
+print("*******************\n"
+"Problem 5"
+"\n1'den 100'e kadar olan sayılardan sadece 3'e bölünen sayıları ekrana bastırın."
+"\nBu işlemi continue ile yapmaya çalışın.\n*******************")
+
+i = 0
+while (i < 100):
+  i += 1
+  if (i % 3 == 0):
+    print("i:",i)
+    
+****************************
+i = 0
+while (i < 100):
+  i += 1
+  if (i % 3 != 0):
+    continue
+  print("i:",i)
+****************************
+for i in range(1,101):
+   if (i % 3 != 0):
+      continue
+   print("i:",i)
