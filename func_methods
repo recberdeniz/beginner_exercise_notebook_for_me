@@ -1,0 +1,21 @@
+"""EVERYTHING IN HERE IS FROM A ONLINE LECTURE NOT BELONGS TO ME"""
+
+print("***Functions_Methods\n***")
+
+print("obje.herhangi_bir_metod(değerler(opsiyonel))")
+
+a = [1,2,3,4,5]
+type(a)
+
+#a. sonra tab a basıldığında methodlar geliyor
+
+print("obje.insert(hedef index,değer)")
+
+a.insert(1,"Cloudy")
+
+print(a)
+
+print("\n**********\nappend_metodu\n**********\n")
+
+a.append("Python")
+print(a)
