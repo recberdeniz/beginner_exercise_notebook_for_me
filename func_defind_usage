@@ -1,0 +1,69 @@
+"""EVERYTHING IN HERE IS FROM A ONLINE LECTURE NOT BELONGS TO ME"""
+
+print("***Functions_Defind_and_Usage\n***")
+
+print("\nThere are (gömülü) built-in functions [print(),type() etc.] and (özel) user-defined functions that we can defined especially.\n")
+print("\nDefining_Function\n")
+
+print("\ndef function_name(parameter1,parameter2....(it's optinal)):\n"
+    "\t\t# function_blok\n"
+    "\t\toperation (Yapılacak_işler)\n"
+    "\t\t# Dönüş_Değeri-(Return Value-Optinal)\n")
+print("\nExample\n"
+"\tsputnik ismi ile fonksiyon tanımlayacağız\n")
+
+type(sputnik)
+
+print("\n Boş bir fonksiyon olacak\n")
+
+def sputnik():
+    print("Telling")
+    print("Untold")
+    
+print("\nsputnik fonksiyonunun tanımlı olup olmadığını kontrol ediyoruz\n")
+
+type(sputnik)
+
+print(sputnik())
+
+print("\n*Parameters_and_Arguments***\n"
+"parameter=argument\n")
+
+print("\nsputnik fonksiyonunu yeniden tanımlıyoruz\n"
+"fonksiyon isminin yanında yer alan parantez içine yazılan name bir parametre\n)
+
+def sputnik(name):
+    print("Your name:",name)
+    
+sputnik ("Mostly")
+
+print("\nOutput: Your Name: Mostly\n"
+"parantez içine yazdığımız Mostly de argüman oluyor.\n"
+"her yeni argüman ile parametrenin değeri değişiyor\n")
+
+sputnik ("Sunny")
+
+print("\nNew Example\n")
+
+def addition(a,b,c):
+    print("result of addition:",a+b+c)
+
+print("\n")
+addition(52,23,67)
+
+print("\nNew Example\n"
+"\t sayı 0 ya da 1 ise faktöriyelinin 1 olduğunu yazmak yerine\n"
+"\tfactorial'e hali hazırda 1 atadağımız için onun ilk değeri olan 1'i verecek\n")
+
+def factorial(num):
+    factorial = 1
+    if (num == 1 or num == 0):
+        print("Factorial:",factorial)
+    else:
+        while (num >= 1):
+            factorial *= num
+            num -= 1
+        print("Factorial:",factorial)
+
+
+    
