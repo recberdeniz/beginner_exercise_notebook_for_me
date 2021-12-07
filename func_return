@@ -1,0 +1,82 @@
+"""EVERYTHING IN HERE IS FROM A ONLINE LECTURE NOT BELONGS TO ME"""
+
+print("***Functions_Return\n***")
+
+print("\n Fonksiyondan alınan değer bir değişkende depolanabiliyor daha sonra kullanılabilmesi için\n")
+
+def addition(a,b,c):
+    print("Addition:",a+b+c)
+    
+def multi_two(a):
+    print("Multi with two:",a*2)
+    
+print("\nhata verecek bir işlem yazıyoruz. üsttekinin sonucu çıkacak alttaki hata verecek\n"
+"çünkü fonksiyonlara return değeri atamadığımız için total değişkeninin bir türü mevcut değil\n")
+
+total = addition(3,4,5)
+multi_two(total)
+
+print("\n")
+type(total)
+
+print("\nReturn ile yeniden yazıyoruz\n")
+
+def addition(a,b,c):
+    print("Addition:",a+b+c)
+    return a+b+c
+    
+def multi_two(a):
+    print("Multi with two:",a*2)
+    return a*2
+
+print("\nyukarıda hata veren kısmı şimdi yeni return değerli kodla yeniden deniyoruz\n")
+
+total = addition(4,5,7)
+print(total)
+print(multi_two(total)) 
+
+print(\n\n***Örneğin , siz yemek yapacaksınız ve yemek için soğanların kıyılması gerekiyor.\n"
+"Bunun için soğanları(değerleri),mutfak robotuna(fonksiyon) veriyorsunuz ve mutfak robotu kıyma işlemini gerçekleştiriyor.\n"
+"Ancak işlemlerini bitirdikten sonra mutfak robotu (ütopik bir örnek olsun)\n"
+"size soğanların kıyılmış halini vermiyor(return kullanmıyor).\n" 
+"Sonuçta da siz bu kıyılmış soğanları alıp yemeğinizde kullanamıyorsunuz.\n"
+"Fonksiyonlarda da returnun anlamı budur.\n"
+"Şimdi bir tane daha örnek yapalım ve returnu iyice anlamaya çalışalım.\n\n"
+
+def multi_three(a):
+    print("1th function on process...")
+    return a*3
+    
+def add_two(a):
+    print("2nd function on process...")
+    return a+2
+    
+def divide_four(a):
+    print("3rd function on process...")
+    return a/3
+    
+print("\nüç fonksiyonu iç içe kullanıyoruz\n"
+"print(divide_four(add_two(multi_three(5))))")
+
+print(divide_four(add_two(multi_three(5))))
+
+print("\nfonksiyonlarda return kullanılmazsa en son print ile veri çekmeye çalışılırken hata verir\n")
+
+print("\nreturn bulunduğu fonksiyonu sonlandırır ardından yazılanlar çalışmaz.\n")
+
+def commit(a):
+    return a // 2
+    print("\nthis print function will not be worked.\n")
+    
+print(commit(6468))
+
+print("\nfakat return öncesinde yazılırsa çalışacaktır\n")
+
+def commit(a):
+    print("\nthis print function will be worked now.\n")
+    return a // 2
+    
+print(commit(6468))
+
+print("\nEk Bilgi:Fonksiyonlarda çağrıldığı yere\n"
+"herhangi bir değer döndürmeyen(return kullanılmayan) fonksiyonlara void fonksiyonlar denmektedir.\n")
