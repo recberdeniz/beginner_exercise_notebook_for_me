@@ -1,3 +1,16 @@
 """EVERYTHING IN HERE IS FROM A ONLINE LECTURE NOT BELONGS TO ME"""
 
 print("***Functions_Parameter_Types\n***")
+
+print("\nDefault_Values_of_Parameters\n"
+"fonksiyonları daha esnek bir şekilde de yaabiliriz\n")
+
+def sputnik(what):
+    print("Sputnik",what)
+    
+sputnik("tells the untold")
+
+print("\niçini boş bırakırsak hata verir:\n")
+
+sputnik()
+
