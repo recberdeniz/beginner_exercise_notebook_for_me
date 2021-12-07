@@ -2,7 +2,12 @@
 
 print("***Functions_Methods\n***")
 
-print("obje.herhangi_bir_metod(değerler(opsiyonel))")
+print("\nobje.herhangi_bir_metod(değerler(opsiyonel))")
+
+print(\nherhangi bir methodun ne işe yaradığını hatırlamanın yöntemi:\n")
+help(a.append)
+
+print("\n\n")
 
 a = [1,2,3,4,5]
 type(a)
@@ -18,4 +23,8 @@ print(a)
 print("\n**********\nappend_metodu\n**********\n")
 
 a.append("Python")
+print(a)
+
+print("\npop metoduyla listenin sonundaki eleman listeden çıkartılıyor\n")
+a.pop()
 print(a)
