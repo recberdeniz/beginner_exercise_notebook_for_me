@@ -20,7 +20,7 @@ def sputnik():
     print("Telling")
     print("Untold")
     
-print("\nsputnik fonksiyonunun tanımlı olup olmadığını kontrol ediyoruz\n")
+print("\nsputnik fonksiyonunun tanımlı olup olmadığını kontrol ediyoruz-Function Call\n")
 
 type(sputnik)
 
