@@ -65,5 +65,8 @@ def factorial(num):
             num -= 1
         print("Factorial:",factorial)
 
+print("\n")
 
-    
+factorial(1)
+factorial(0)
+factorial(12)
