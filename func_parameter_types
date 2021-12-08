@@ -14,3 +14,56 @@ print("\niçini boş bırakırsak hata verir:\n")
 
 sputnik()
 
+print("\nAncak parametrelere varsayılan değerleri atarsak\n"
+"içine herhangi bir değer vermediğimizde de fonksiyon çalışacaktır\n"
+"örnek:\n")
+
+def sputnik(does_what = "tells untold"):
+    print("sputnik", does_what)
+
+print("\nbu durumda boş olarak yazdırdığımızda tanımladığımız değeri verir\n")
+
+sputnik()
+
+print("\nfakat aşağıdaki gibi değer girerek yazdırırsak başta tanımladığımız değer değişir\n")
+
+sputnik("Cloudy")
+
+print("\nNew Example:\n")
+
+def cloud(a,b,c):
+    print("first parameter:",a,"second parameter:",b,"third parameter:",c)
+    
+cloud("Today's","Weather","Cloudy")
+
+print("\nşimdi bu cloud fonksiyonuna varsayılan değer atama\n")
+
+def cloud(a = "today",b = "weather",c = "cloudy"):
+    print("first parameter:",a,"second parameter:",b,"third parameter:",c)
+    
+print("\n")
+
+def cloud()
+
+print("\nparametrelerden birinin değerini girmeden diğer değerleri sırasıyla girersek\n"
+"girilmeyen değeri otomatik varsayılan şekilde verir:\n"
+"Sırayla girilmediği takdirde fonksiyon sıkıntı çıkaracaktır\n")
+
+cloud("today","weather")
+
+print("\nsıralı gitmeyi engelleyecek şekilde çağırmak istediğimiz değerler varsa\n"
+"fonksiyon(parametre = değer) şeklinde yazmak gerekir\n")
+
+print("\nDENEME YAP. ILK IKI DEGERI FARKLI GIR NE OLDUGUNU GOR\n")
+
+
+print("\nVarsayılan Değerlere Örnek Olarak\n"
+"Daha önce print fonksiyonunda yer alıyordu:\n")
+
+print("\naralardaki virgül birer boşluk değeri taşıyor\n")
+print("It's","Cloudy","Tomorrow")
+
+print("\nsep parametresi ile verilen değerlerin ayrımını tanımlıyor\n")
+print("It's","Cloudy","Tomorrow",sep = "/")
+
+print("\n---***Flexible Number of Arguments***---\n")
