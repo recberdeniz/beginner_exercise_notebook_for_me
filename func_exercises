@@ -1,0 +1,33 @@
+"""EVERYTHING IN HERE IS FROM A ONLINE LECTURE NOT BELONGS TO ME"""
+
+print("\n***\nFunctions_Exercises\n***")
+
+print("\n***\nFunctions_Exercise_1\n***")
+
+print("\n1'den 1000'e kadar olan sayılardan mükemmel sayı olanları ekrana yazdırın.\n"
+"Bunun için bir sayının mükemmel olup olmadığını dönen bir tane fonksiyon yazın.\n"
+"Bir sayının bölenlerinin toplamı kendine eşitse bu sayı mükemmel bir sayıdır.\n"
+"Örnek olarak 6 mükemmel bir sayıdır (1 + 2 + 3 = 6).\n")
+
+def per_num(num):
+    total = 0
+    for i in range(1,num):
+        if (num % i == 0):
+            total += i
+    return total
+
+while True:
+    num = input("Type Number:")
+    
+    if (num == "q"):
+      print("See yea mate")
+      break
+    else:
+      num = int(num)
+      per_num(num)
+      if (total == num)
+        print(num,"yes perfect")
+      else:
+        print(num,"nope")
+        
+print("\n***\nFunctions_Exercise_2\n***")
