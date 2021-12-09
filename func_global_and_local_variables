@@ -1,0 +1,49 @@
+"""EVERYTHING IN HERE IS FROM A ONLINE LECTURE NOT BELONGS TO ME"""
+
+print("***Functions_Global_and_Local_Variables\n***")
+
+print("Pythonda her bir değişkenin, fonksiyonun ve ileride göreceğimiz sınıfların(class)\n"
+"aslında bir kapsamı(scope) bulunur ve Python herbir değişkeni bir isim alanında (namespace) tanımlar.\"
+"Değişkenlerin İsim alanı ise, bu değişkenlerin nerelerde var olduğunu ve nerelerde kullanılabileceğini gösterir.\n"
+"Pythonda fonksiyonlarda tanımlanan değişkenler Python tarafından Yerel (Local) değişkenler olarak tanımlanırlar.\n"
+"Yani bir fonksiyon bloğunda oluşturulan değişkenler fonksiyona özgüdür ve fonksiyon çalışmasını bitirdikten sonra\n"
+"bu değişkenler bellekten silinir ve yok olur. Böylelikle , fonksiyon içinde tanımlanmış bir değişkene başka bir yerden erişilemez.\n"
+"\nPythonda en genel kapsama sahip değişkenler ise Global değişkenler olarak tanımlanırlar\n"
+"ve global değişkenlere tanımlandığı andan itibaren programın her yerinden ulaşabiliriz.\n")
+
+print("\n\n***Local Variable Example:***\n"
+"\t if we define the variable in function block it will be local\n"
+"\t and it will NOT be available to call back or use after function works done\n")
+def function():
+    a = 10
+    print(a)
+    
+print("\n We will try to call it back from outside of function's block\n"
+"But it will give name error because a is not defined outside of block\n"
+"Main reason is because function has done, all variables dissappear\n")
+
+function()
+print(a)
+
+print("\n\n***GLobal Variable Example:\n"
+"\t Variable that should be global has to be written before and outside of function block\n")
+
+b = 5
+def function():
+    print(b)
+    
+print("\nCalling global variable from outside of function block\n")
+
+function()
+
+print("\nExample For Error\n"
+"there is no defined variable for print(s) in function defining block\n"
+"s degiskeni global olmuş da olsa fonksiyon çağrısı yapıldıktan sonra tanımlandığı\n"
+"için hata verir\n")
+
+def function():
+    print(s)
+function()
+s = "Python"
+
+print("\n
