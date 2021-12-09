@@ -4,26 +4,6 @@ print("***Functions_Prime_Number_Exercise(Asal Sayı)\n***")
 
 # verilen sayıyı kontrol etme _ benim yazdığım
 
-def func_prime(num):
-    if (num==1):
-      return False
-    elif (num==2):
-      return True
-    elif (num > 2 and num % 2 == 0)
-      return False
-    else:
-      return True
-      
-      # ya da 
-def func_prime(num):
-    if (num==1):
-      return False
-    elif (num==2):
-      return True
-    elif (num > 2 and num % 2 != 0)
-      return True
-
-# verilen sayıyı kontrol etme _ hocanın yazdığı
 def asal_mi(sayı):
     if (sayı == 1):
         return False
