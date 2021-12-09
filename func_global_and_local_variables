@@ -46,4 +46,38 @@ def function():
 function()
 s = "Python"
 
-print("\n
+print("\nExample_1\n"
+"Global Variable's value is available to change in function block\n"
+"fonksiyon çağrısında local olanı, diğer değişken çağırımında ise global değerini verir\n")
+
+c = 10
+def function():
+    c = 2
+    print(c)
+    
+print("\ntrying from outside\n")
+function()
+print(c)
+
+print("\CHANGING GLOBAL VARIABLE'S VALUE NOT FOR ONLY FUNCTION BLOCK\n"
+"***---Global Keyword(Deyimi)---***\n")
+
+d = 5
+
+def function():
+    global d
+    d = 3
+    print(d)
+    
+function()
+print(d)
+
+print("\nKullanışlı görünse de programın genelindeki değeri değiştirdiği için\n"
+"programda karmaşıklığa sebebiyet verebilir ve kodun okunmasını zorlaştırıyor\n\n"
+"\n\n***If ve Döngülerde kullanılan değişkenin global mi local mi olduğunun testi***\n"
+"İçeride tanımlanmış olsa dahi fonksiyon haricinde global olarak tanımlanıyor\n")
+
+if True:
+    e = 4
+    print(e)
+print(e)
