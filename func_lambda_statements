@@ -1,0 +1,60 @@
+"""EVERYTHING IN HERE IS FROM A ONLINE LECTURE NOT BELONGS TO ME"""
+
+print("***Functions_Lambda_Statements\n***")
+
+print("\nList Comprehension yönteminin benzeri, aynı mantıkta\n"
+"list comprehension hatırlatması\n")
+
+liste1 = [1,2,3,4,5] 
+liste2 = list()
+for i in liste1: # Bu klasik liste oluşturma yöntemi
+    liste2.append(i*2)
+print(liste2)
+
+print("\nList Comprehension\n")
+
+liste3 = [1,2,3,4,5]
+liste4 = [i * 2 for i in liste3] # List Comprehension
+print(liste4)
+
+print("\netiket = lambda parametre1,parametre2.... :  İşlem\n")
+
+#normal yazım
+
+def multi_2(x):
+    return x*2
+
+print(multi_2(3))
+
+#lambda ifadesiyle yazımı
+
+multi_2 = lambda x : x * 2
+
+print(multi_2(23))
+
+print("\nNew Example\n")
+#normal yazım
+def addition(a,b,c):
+    return a+b+c
+
+print(addition(12,124,51))
+
+#lambda ifadesiyle yazımı
+
+addition = lambda a,b,c : a+b+c
+
+print(addition(12,124,51))
+print("\nNew Example\n")
+
+#normal yazım
+def overturn(s):
+  return s[::-1]
+
+print(overturn("Python"))
+
+#lambda ifadesiyle yazımı
+
+overturn = lambda s : s[::-1]
+
+print("\nNew Example\n")
+#normal yazım
