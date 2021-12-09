@@ -2,6 +2,7 @@
 
 print("***Functions_Lambda_Statements\n***")
 
+print("\n lambda ifadeleri büyük uzun fonksiyonlarda kullanılmıyorlar\n")
 print("\nList Comprehension yönteminin benzeri, aynı mantıkta\n"
 "list comprehension hatırlatması\n")
 
@@ -56,5 +57,18 @@ print(overturn("Python"))
 
 overturn = lambda s : s[::-1]
 
+print(overturn("Python"))
+
 print("\nNew Example\n")
 #normal yazım
+
+def oddoreven(a):
+    return a % 2 == 0
+print(oddoreven(14))
+print(oddoreven(19))
+
+#lambda ifadesiyle yazımı
+
+oddoreven = lambda a : a % 2 == 0
+
+print(oddoreven(265))
