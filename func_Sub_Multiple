@@ -1,3 +1,18 @@
 """EVERYTHING IN HERE IS FROM A ONLINE LECTURE NOT BELONGS TO ME"""
 
-print("***Functions_Sub_Multiple\n***")
+print("\n***\nFunctions_Sub_Multiple\n***")
+
+def sub_multi(num):
+    for i in range(2,num):
+        if (num % i == 0):
+           return i
+
+while True:
+  num = input("Type Your Num You İ.Melih G:")
+
+  if (num == "q"):
+     print("See yea mate")
+     break
+  else:
+     num = int(num)
+     print(sub_multi(num))
