@@ -66,4 +66,41 @@ print("It's","Cloudy","Tomorrow")
 print("\nsep parametresi ile verilen değerlerin ayrımını tanımlıyor\n")
 print("It's","Cloudy","Tomorrow",sep = "/")
 
-print("\n---***Flexible Number of Arguments***---\n")
+print("\n\n\n---***Flexible Number of Arguments***---\n\n")
+
+def addition(a,b,c):
+    print(a+b+c)
+    
+addition(14,5213,73)
+
+print("\nfakat 4 değer yazarsak hata veriyor\n")
+
+addition(12,435,62,626)
+
+print("\nbu durumu esnek sayılarla çözebiliriz\n")
+
+def addition(*a):
+    print(a)
+    
+addition(124,15,513)
+
+print("\n yukarıdaki gibi yazıldığında outputda değerlerin bir a adlı bir tuple(demet) içinde tutulduğunu görüyoruz\n")
+
+addition(124,265,745,2134,3476)
+
+print("\ndeğerleri toplamak için for döngüsünü kullanıyoruz\n")
+
+def addition(*a):
+    total = 0
+    for i in a:
+        total += i
+    print("total:",total)
+    
+addition(42,26,2134)
+print("\n")
+addition(32,23,67,85,234,264,465)
+print("\n")
+
+print("\nprint fonksiyonunda da esnek değer mantığı işler, ne yazılırsa onu verir\n")
+
+help(print)
