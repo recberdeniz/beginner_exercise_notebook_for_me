@@ -55,4 +55,4 @@ while True:
         print("See you")
         break
     else:
-        print(gcd_num)
+        print(max(gcd_num))
