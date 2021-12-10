@@ -47,3 +47,11 @@ def gcd(num_1,num_2)
             
     gcd_num = [x for i in num_2_l if x - i == 0]
     return gcd_num
+
+while True:
+    num = input("Num:")
+    if (num == "q"):
+        print("See you")
+        break
+    else:
+        print(gcd_num)
