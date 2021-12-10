@@ -49,8 +49,9 @@ def gcd(num_1,num_2)
     return gcd_num
 
 while True:
-    num = input("Num:")
-    if (num == "q"):
+    num_1 = input("Number_1:")
+    num_2 = input("Number_2:")
+    if (num_1 == "q" or num_2 == "q"):
         print("See you")
         break
     else:
